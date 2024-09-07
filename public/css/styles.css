@@ -38,12 +38,6 @@ header {
   fill: #ff385c;
 }
 
-.header-content nav {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
 .header-content .search {
   box-sizing: border-box;
   display: flex;
@@ -84,7 +78,7 @@ header {
   width: 1px;
 }
 
-.header-content .search .icon {
+.header-content .search .search-icon {
   display: block;
   fill: none;
   height: 12px;
@@ -96,6 +90,12 @@ header {
   padding: 10px;
   border-radius: 50%;
   margin: 7px 7px 7px 0px;
+}
+
+.header-content nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .header-content .links {
@@ -113,6 +113,13 @@ header {
 
 .header-content .links > a:hover {
   background-color: #f7f7f7;
+}
+
+.header-content .links .world-icon {
+  display: block;
+  height: 16px;
+  width: 16px;
+  fill: #222222;
 }
 
 .header-content .user {
@@ -134,5 +141,20 @@ header {
 }
 
 .header-content .user svg {
+  stroke: #6a6a6a;
+}
+
+.header-content .user .list-icon {
+  height: 16px;
+  width: 16px;
+  stroke: #6a6a6a;
+  stroke-width: 3;
+  overflow: visible;
+}
+
+.header-content .user .user-icon {
+  display: block;
+  height: 100%;
+  width: 100%;
   fill: #6a6a6a;
 }
