@@ -158,3 +158,74 @@ header {
   width: 100%;
   fill: #6a6a6a;
 }
+
+main .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-wrapper .title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-block: 25px;
+}
+
+.title-wrapper .title h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #222222;
+}
+
+.title-wrapper .title .translation-icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.title-wrapper .buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title-wrapper .buttons button {
+  display: flex;
+  background-color: #ffffff;
+  align-items: center;
+  border: none;
+  padding: 10px;
+  gap: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #222222;
+}
+
+.title-wrapper .buttons button:hover {
+  background-color: #f7f7f7;
+}
+
+.title-wrapper .buttons button span {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.title-wrapper .buttons .share-icon {
+  fill: none;
+  height: 16px;
+  width: 16px;
+  stroke: currentcolor;
+  stroke-width: 2;
+}
+
+.title-wrapper .buttons .favorite-icon {
+  display: block;
+  fill: none;
+  height: 16px;
+  width: 16px;
+  stroke: currentcolor;
+  stroke-width: 2;
+  overflow: visible;
+}
