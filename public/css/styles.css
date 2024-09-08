@@ -1064,3 +1064,129 @@ main .title-wrapper {
   display: block;
   fill: currentcolor;
 }
+
+.host {
+  padding-block: 48px;
+  border-top: 1px solid #dddddd;
+}
+
+.host h2 {
+  margin-bottom: 24px;
+}
+
+.host > div {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 48;
+}
+
+.host .left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.host .left .card {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 24px;
+  padding: 32px 24px;
+  user-select: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  position: relative;
+}
+
+.host .left .card .host-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.host .left .card .image-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.host .left .card .image-wrapper .image-placeholder {
+  background-color: #f7f7f7;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.host .left .card .image-wrapper .award {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  background: linear-gradient(to right, #e61e4d 0%, #e31c5f 50%, #d70466 100%);
+  border-radius: 50%;
+  position: absolute;
+  right: -4px;
+  bottom: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+.host .left .card .image-wrapper .award svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+  fill: #ffffff;
+}
+
+.host .left .card h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.host .left .card p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.host .left .card p svg {
+  display: block;
+  height: 12px;
+  width: 12px;
+  fill: currentcolor;
+}
+
+.host .left .card .host-data {
+  position: absolute;
+  right: 0;
+  width: 96px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.host .left .card .host-data .data {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px;
+}
+
+.host .left .card .host-data .data:not(:first-of-type) {
+  border-top: 1px solid #dddddd;
+}
+
+.host .left .card .host-data .data h3 {
+  font-size: 1.375rem;
+}
+
+.host .left .card .host-data .data p {
+  font-size: 0.625rem;
+}
