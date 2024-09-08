@@ -509,6 +509,41 @@ main .title-wrapper {
   color: #6a6a6a;
 }
 
+.info .left .description .translation-disclaimer {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  margin-bottom: 36px;
+}
+
+.info .left .description .translation-disclaimer > .show-original {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.info .left .description p {
+  margin-bottom: 24px;
+}
+
+.info .left .description .show-more {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.info .left .description .show-more > span {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .info .right {
   width: 33.33333333333333%;
   position: relative;
