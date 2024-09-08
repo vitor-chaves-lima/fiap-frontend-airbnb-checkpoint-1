@@ -317,6 +317,7 @@ main .title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  padding-bottom: 32px;
 }
 
 .summary .text-wrapper {
@@ -468,6 +469,44 @@ main .title-wrapper {
   position: absolute;
   bottom: -2px;
   right: -4px;
+}
+
+.info .left .info-content {
+  border-top: 1px solid #dddddd;
+  padding-block: 32px;
+}
+
+.info .left .highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info .left .highlights .highlight-row {
+  display: flex;
+  gap: 24px;
+}
+
+.info .left .highlights .highlight-row .highlight-icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
+.info .left .highlights .highlight-row > div {
+  margin-bottom: 4px;
+}
+
+.info .left .highlights .highlight-row h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info .left .highlights .highlight-row span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #6a6a6a;
 }
 
 .info .right {
