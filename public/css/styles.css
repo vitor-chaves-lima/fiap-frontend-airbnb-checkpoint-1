@@ -544,6 +544,47 @@ main .title-wrapper {
   text-decoration: underline;
 }
 
+.info .left .arrangement h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.info .left .arrangement > div {
+  display: flex;
+  gap: 8px;
+}
+
+.info .left .arrangement .room {
+  padding: 24px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  width: 25%;
+}
+
+.info .left .arrangement .room .icons {
+  display: flex;
+  gap: 8px;
+}
+
+.info .left .arrangement .room svg {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+  margin-bottom: 16px;
+}
+
+.info .left .arrangement .room h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.info .left .arrangement .room p {
+  font-size: 0.875rem;
+}
+
 .info .right {
   width: 33.33333333333333%;
   position: relative;
