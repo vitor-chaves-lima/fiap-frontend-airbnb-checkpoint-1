@@ -923,3 +923,99 @@ main .title-wrapper {
   stroke-width: 2;
   overflow: visible;
 }
+
+.comments {
+  border-top: 1px solid #dddddd;
+  padding: 40px;
+}
+
+.comments > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+}
+
+.comments .comment {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comments .comment .user-info {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.comments .comment .user-info .image-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
+
+.comments .comment .user-info h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.comments .comment .user-info p {
+  font-size: 0.875rem;
+}
+
+.comments .comment .user-review {
+  display: flex;
+  align-items: center;
+}
+
+.comments .comment .user-review > p::before {
+  content: "•";
+  padding-inline: 2px;
+  color: #222222;
+}
+
+.comments .comment .user-review .rating {
+  display: flex;
+  gap: 1px;
+}
+
+.comments .comment .user-review .rating svg {
+  display: block;
+  height: 0.5625rem;
+  width: 0.5625rem;
+  fill: var(--linaria-theme_palette-hof);
+}
+
+.comments .comment .user-review .date {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.comments .comment .user-review .day-count {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #6a6a6a;
+}
+
+.comments .comment .comment-text {
+  font-size: 1rem;
+}
+
+.comments button {
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 13px 23px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.comments button:hover {
+  background-color: #f7f7f7;
+}
+
+.comments button:active {
+  transform: scale(0.96);
+}
