@@ -636,6 +636,58 @@ main .title-wrapper {
   transform: scale(0.96);
 }
 
+.info .left .calendar h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.info .left .calendar p {
+  font-size: 0.9rem;
+  color: #6a6a6a;
+  margin-bottom: 24px;
+}
+
+.info .left .calendar .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .left .calendar .buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.info .left .calendar .buttons button:first-of-type {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.info .left .calendar .buttons button:last-of-type {
+  padding: 8px;
+  border-radius: 8px;
+  text-decoration: underline;
+  height: 35px;
+}
+
+.info .left .calendar .buttons button:hover {
+  background-color: #f7f7f7;
+}
+
+.info .left .calendar .buttons button:active {
+  transform: scale(0.96);
+}
+
+.info .left .calendar .buttons svg {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
 .info .right {
   width: 33.33333333333333%;
   position: relative;
