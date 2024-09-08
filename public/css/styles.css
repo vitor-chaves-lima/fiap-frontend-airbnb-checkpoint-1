@@ -833,3 +833,93 @@ main .title-wrapper {
   font-size: 0.95rem;
   text-decoration: underline;
 }
+
+.reviews {
+  padding: 48px;
+  border-top: 1px solid #dddddd;
+}
+
+.reviews .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.reviews .header .award {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.reviews .header .award h2 {
+  font-size: 6.25rem;
+}
+
+.reviews .header .award img {
+  height: 132px;
+}
+
+.reviews .header h3 {
+  font-size: 1.375rem;
+  margin-bottom: 8px;
+}
+
+.reviews .header p {
+  font-size: 1.125rem;
+  color: #6a6a6a;
+  max-width: 23.75rem;
+  text-align: center;
+}
+
+.reviews .items {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.reviews .items .general {
+  margin-right: 32px;
+}
+
+.reviews .items .general h4 {
+  margin-bottom: 8px;
+}
+
+.reviews .items .item {
+  border-left: 1px solid #dddddd;
+  padding: 0px 24px 4px;
+}
+
+.reviews .items .item h4 {
+  margin-bottom: 2px;
+}
+
+.reviews .items .item h4,
+.reviews .items .general h4 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.reviews .items .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews .items .item svg {
+  display: block;
+  height: 32px;
+  width: 32px;
+  fill: currentcolor;
+}
+
+.reviews .items .item .communication-icon {
+  display: block;
+  fill: none;
+  height: 32px;
+  width: 32px;
+  stroke: currentcolor;
+  stroke-width: 2;
+  overflow: visible;
+}
