@@ -585,6 +585,57 @@ main .title-wrapper {
   font-size: 0.875rem;
 }
 
+.info .left .amenities h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.info .left .amenities > div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.info .left .amenities .amenity-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.info .left .amenities .amenity-row.line-through {
+  text-decoration: line-through;
+}
+
+.info .left .amenities .amenity-row svg {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
+.info .left .amenities button {
+  padding: 13px 23px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.info .left .amenities button:hover {
+  background-color: #f7f7f7;
+}
+
+.info .left .amenities button:active {
+  transform: scale(0.96);
+}
+
 .info .right {
   width: 33.33333333333333%;
   position: relative;
