@@ -1336,3 +1336,23 @@ main .title-wrapper {
   display: block;
   fill: currentcolor;
 }
+
+.breadcumbs {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+.breadcumbs nav {
+  padding-block: 32px;
+  font-size: 0.875rem;
+}
+
+.breadcumbs nav a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.breadcumbs nav a:hover {
+  text-decoration: underline;
+}
