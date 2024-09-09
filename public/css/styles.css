@@ -423,46 +423,46 @@ main .title-wrapper {
   text-decoration: underline;
 }
 
-.summary .host {
+.summary .host-wrapper {
   display: flex;
   gap: 24px;
 }
 
-.summary .host .host-info {
+.summary .host-wrapper .host-info {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.summary .host .host-info .separator::before {
+.summary .host-wrapper .host-info .separator::before {
   content: "•";
   padding-inline: 2px;
 }
 
-.summary .host .host-info .name {
+.summary .host-wrapper .host-info .name {
   font-size: 1rem;
   font-weight: 600;
   color: #222222;
 }
 
-.summary .host .host-info .description {
+.summary .host-wrapper .host-info .description {
   display: flex;
   font-size: 0.875rem;
   color: #6a6a6a;
 }
 
-.summary .host .badge {
+.summary .host-wrapper .badge {
   position: relative;
 }
 
-.summary .host .badge .image-placeholder {
+.summary .host-wrapper .badge .image-placeholder {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #f7f7f7;
 }
 
-.summary .host .badge img {
+.summary .host-wrapper .badge img {
   display: block;
   height: 20px;
   width: 20px;
@@ -1077,7 +1077,7 @@ main .title-wrapper {
 .host > div {
   display: grid;
   grid-template-columns: 380px 1fr;
-  gap: 48;
+  gap: 48px;
 }
 
 .host .left {
@@ -1237,4 +1237,59 @@ main .title-wrapper {
   width: 12px;
   display: block;
   fill: currentcolor;
+}
+
+.host .right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.host .right .superhost-info,
+.host .right .response-time {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.host .right .superhost-info h3,
+.host .right .response-time h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.host .right a {
+  text-align: center;
+  line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #222222;
+  color: #ffffff;
+  padding: 14px 24px;
+  border-radius: 8px;
+  width: fit-content;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  user-select: none;
+}
+
+.host .right a:active {
+  transform: scale(0.96);
+}
+
+.host .right .payment-warning {
+  border-top: 1px solid #dddddd;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+}
+
+.host .right .payment-warning svg {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: #e31c5f;
+  stroke: currentcolor;
 }
