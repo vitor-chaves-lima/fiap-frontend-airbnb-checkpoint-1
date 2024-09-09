@@ -1190,3 +1190,51 @@ main .title-wrapper {
 .host .left .card .host-data .data p {
   font-size: 0.625rem;
 }
+
+.host .left .about {
+  display: flex;
+  flex-direction: column;
+}
+
+.host .left .about svg {
+  display: block;
+  height: 24px;
+  width: 24px;
+  fill: currentcolor;
+}
+
+.host .left .about > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+}
+
+.host .left .about > div:first-of-type {
+  margin-bottom: 16px;
+}
+
+.host .left .about > p {
+  margin-top: 32px;
+  margin-bottom: 10px;
+}
+
+.host .left .about a {
+  color: #222222;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.host .left .about a span {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.host .left .about a svg {
+  height: 12px;
+  width: 12px;
+  display: block;
+  fill: currentcolor;
+}
