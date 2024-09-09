@@ -1356,3 +1356,115 @@ main .title-wrapper {
 .breadcumbs nav a:hover {
   text-decoration: underline;
 }
+
+footer {
+  background-color: #f7f7f7;
+}
+
+footer .footer-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+footer .footer-nav .column {
+  padding-block: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer .footer-nav .column h3,
+footer .footer-nav .column a {
+  font-size: 0.875rem;
+}
+
+footer .footer-nav .column a {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .footer-nav .column a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-content {
+  padding-block: 24px;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-content .links {
+  display: flex;
+  font-size: 0.875rem;
+}
+
+footer .footer-content .right {
+  display: flex;
+  gap: 24px;
+}
+
+footer .footer-content .links a {
+  text-decoration: none;
+}
+
+footer .footer-content .links a span {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .footer-content .links a span:hover {
+  text-decoration: underline;
+}
+
+footer .footer-content .links a::before {
+  content: "•";
+  padding-inline: 5px;
+}
+
+footer .footer-content .preferences {
+  display: flex;
+  gap: 24px;
+}
+
+footer .footer-content .preferences a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #222222;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+footer .footer-content .preferences svg {
+  display: block;
+  height: 16px;
+  width: 16px;
+  fill: currentcolor;
+}
+
+footer .footer-content .preferences a .price-icon {
+  font-size: 1rem;
+}
+
+footer .footer-content .preferences a:hover span:not(.price-icon) {
+  text-decoration: underline;
+}
+
+footer .footer-content .social {
+  display: flex;
+  gap: 16px;
+}
+
+footer .footer-content .social a {
+  text-decoration: none;
+  color: #222222;
+}
+
+footer .footer-content .social a svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+  fill: currentcolor;
+}
