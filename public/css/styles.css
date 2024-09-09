@@ -1293,3 +1293,46 @@ main .title-wrapper {
   fill: #e31c5f;
   stroke: currentcolor;
 }
+
+.policies {
+  padding-block: 48px;
+  border-top: 1px solid #dddddd;
+}
+
+.policies h2 {
+  margin-bottom: 24px;
+}
+
+.policies .policies-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.policies .policies-content .column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.policies .policies-content .column h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.policies .policies-content .column p {
+  font-size: 1rem;
+}
+
+.policies .policies-content .column a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #222222;
+}
+
+.policies .policies-content .column a svg {
+  height: 7px;
+  width: 7px;
+  display: block;
+  fill: currentcolor;
+}
