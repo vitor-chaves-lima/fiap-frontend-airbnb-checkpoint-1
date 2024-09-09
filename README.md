@@ -12,8 +12,8 @@ https://www.airbnb.com.br/rooms/22319550?adults=1&category_tag=Tag%3A5348&enable
 
 ## Integrantes
 
-Douglas dos Santos Melo - RM: 556439
-Gabriel Danius Fachetti Barbosa - RM: 555747
-Henrique Borges de Castro Sanches - RM: 557959
-Matheus Marcelino Dantas da Silva - RM: 556332
-Vitor Chaves de Lima Coelho - RM: 557067
+- Douglas dos Santos Melo - RM: 556439
+- Gabriel Danius Fachetti Barbosa - RM: 555747
+- Henrique Borges de Castro Sanches - RM: 557959
+- Matheus Marcelino Dantas da Silva - RM: 556332
+- Vitor Chaves de Lima Coelho - RM: 557067
