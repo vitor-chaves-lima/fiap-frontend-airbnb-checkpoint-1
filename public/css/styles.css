@@ -1495,6 +1495,11 @@ nav .header-share{
   display: none;
 }
 
+.info .left .info-content img{
+  width: 80%;
+  content: url('../assets/images/calendar.png')
+}
+
 
 
 @media (max-width: 743px) and (min-width: 320px) {
@@ -1944,5 +1949,109 @@ nav .header-share{
     flex-wrap: wrap;
   }
 
+
+}
+
+@media (max-width: 1128px) and  (min-width: 744px){
+
+  .container{
+    padding-inline: 40px;
+  }
+  .hedaer-content{
+    justify-content: space-evenly;
+  }
+  .header-content .logo svg{
+    width: 30px;
+  }
+
+  .header-content .logo {
+    flex: 1 0 5%;
+  }
+  .header-content .logo svg .icon-text {
+    display: none;
+  }
+
+  .header-content .search span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90px;
+  }
+
+  .info .left .info-content img{
+    content: url('../assets/images/calendare.png')
+  }
+
+  .reviews .items .item {
+    width: 8.6%;
+    padding: 0px 16px 2px;
+  }
+
+  .reviews {
+    padding: 0px;
+  }
+
+  .reviews .header{
+    padding-top: 48px;
+  }
+
+  .reviews .items{
+    padding-bottom: 35px;
+  }
+
+  .location img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .location .content{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:1440px) and (min-width:1128px){
+  .container{
+    padding-inline: 10%;
+  }
+
+  .location img {
+    width: 90%;
+  }
+
+  .reviews .items .item {
+    width: 8.6%;
+    padding: 0px 16px 2px;
+  }
+
+  .reviews .header{
+    padding-top: 48px;
+  }
+
+  .reviews .items{
+    padding-bottom: 35px;
+  }
+
+  .reviews {
+    padding: 0;
+  }
+
+  .info .left .info-content img{
+    min-width: 505px;
+    max-width: 60%;
+  }
+  
+}
+
+@media (max-width: 1750px) and (min-width: 1441px) {
+
+  .container{
+    padding-inline: 15%;
+  }
+  .info .left .info-content img{
+    min-width: 505px;
+    max-width: 60%;
+  }
 
 }
