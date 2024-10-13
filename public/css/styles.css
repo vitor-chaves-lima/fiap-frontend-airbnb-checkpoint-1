@@ -356,6 +356,7 @@ main .title-wrapper {
 
 .summary .reviews .award {
   display: flex;
+  order: 1;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -374,6 +375,7 @@ main .title-wrapper {
 .summary .reviews .description {
   font-weight: 600;
   font-size: 1rem;
+  order: 2;
   color: #222222;
 }
 
@@ -382,6 +384,7 @@ main .title-wrapper {
   flex-direction: column;
   align-items: center;
   gap: 1px;
+  order: 3;
 }
 
 .summary .reviews .stars span {
@@ -403,12 +406,14 @@ main .title-wrapper {
 .summary .reviews .separator {
   background-color: #dddddd;
   height: 40px;
+  order: 4;
   width: 1px;
 }
 
 .summary .reviews .counter {
   display: flex;
   flex-direction: column;
+  order: 5;
   align-items: center;
 }
 
@@ -1467,4 +1472,716 @@ footer .footer-content .social a svg {
   height: 18px;
   width: 18px;
   fill: currentcolor;
+}
+
+.policies .report{
+  display: none;
+}
+
+nav .header-share{
+  display: none;
+  width: 100px;
+}
+
+.slider img {
+    display:none;
+}
+
+.summary .reviews .separator:nth-last-of-type(2){
+  display: none
+}
+
+.calendare{
+  display: none;
+}
+
+.info .left .info-content img{
+  width: 80%;
+  content: url('../assets/images/calendar.png')
+}
+
+main .rental-data{
+  display: none;
+}
+
+.location-mobile{
+  display: none;
+}
+
+
+
+@media (max-width: 743px) {
+   .container{
+      padding: 0px 24px 0px 24px;
+      
+   }
+
+
+   main .rent{
+    border-top: 1px solid #dddddd;
+    
+    background-color:#ffffff;
+    z-index: 99;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+   }
+
+   main .rental-data{
+    padding-inline: 24px;
+    z-index: 99;
+    min-width: 264px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    justify-content: space-between;
+   }
+
+   main .rental-data span{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+   }
+
+   main .rental-data a{
+    align-content: center;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    height: 48px;
+    flex-wrap: wrap;
+    padding: 0;
+    max-height: 68px;
+    min-width: 200px;
+    background-size: 200% 200%;
+    background-position: calc((100 - var(--mouse-x, 0))* 1%) calc((100 - var(--mouse-y, 0))* 1%);
+    background-image: radial-gradient(circle at center, #ff385c 0%, #e61e4d 27.5%, #e31c5f 40%, #d70466 57.5%, #bd1e59 75%, #bd1e59 100%);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 600;
+   }
+
+   header{
+    height: 60px
+   }
+
+   .header-content{
+    z-index: 99;
+    height: 60px;
+    width: 100%;
+   }
+   .header-content .logo{
+    display: none
+   }
+
+   .header-content .search{
+    display: none;
+   }
+
+   .header-content .links{
+      display: flex;
+   }
+
+   .header-content nav{
+      width: 100%;
+      display: flex ;
+      justify-content:space-between;
+   }
+   .header-content .links  :nth-child(1){
+ 
+      left: 10px;
+      top: 8px;
+      content: url("../assets/svg/left-arrow.svg");
+      width: 20px;
+   }
+
+    .header-content .links :nth-child(2)::before {
+
+      content: "Acomodações";
+      width: 100%;
+      padding: 0;
+    }
+
+    nav .header-share{
+      display: flex;
+      justify-content: right;
+      gap: 10px;
+    }
+
+   .header-content .user{
+    display: none;
+   }
+
+   .header-content .links .world-icon {
+    display: none;
+  }
+
+  .title-wrapper .buttons{
+    display: none;
+   }
+   .image-gallery{
+    display: none;
+   }
+
+   .slider img{
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    background-image: "https://a0.muscache.com/im/pictures/miso/Hosting-22319550/original/cc1fd71d-1a91-4026-99f8-c2cbffefd68f.jpeg?im_w=1200";
+    height: 80%;
+    position: relative;
+    padding: 0;
+   }
+
+   .container .slider img{
+    padding: 0;
+   }
+
+   .summary .text-wrapper h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222222;
+  }
+  
+  .summary .text-wrapper span{
+    font-size: 0.875rem;
+  }
+
+  .info .right .date-selector {
+    display: none;
+  }
+
+  .info{
+    display: flex;
+    padding-block: 0;
+  }
+  
+  .info .right {
+    display: none;
+  }
+  
+  .info .left {
+    width: 100%;
+  }
+
+  .summary .text-wrapper div {
+    flex-wrap: wrap;
+  }
+
+  .summary .reviews .description {
+    display: none
+  }
+
+  .summary .reviews .award {
+    order: 3;
+  }
+
+  .summary .reviews .stars {
+    order: 1;
+  }
+
+
+  .summary .reviews .separator {
+    order: 2;
+  }
+
+  .summary .reviews .separator:nth-last-of-type(2){
+    display: flex;
+    order: 3; 
+  }
+
+  .summary .reviews .counter {
+    order: 5;
+  }
+
+  .reviews .header .award img {
+    height: 100px;
+}
+  
+
+  .info .left .arrangement .room {
+    width: 50%;
+  }
+
+  .info .left .amenities > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info .left .amenities button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .calendar{
+    display: none;
+  }
+
+  .calendare{
+    order: 2;
+    display: block;
+    border-top: 1px solid #dddddd;
+    padding-block: 32px;
+  }
+
+  .calendare h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .calendare p {
+    font-size: 0.9rem;
+    color: #6a6a6a;
+    margin-bottom: 24px;
+  }
+  
+  .calendare .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .calendare .buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+
+  .calendare .buttons button:first-of-type {
+    padding: 12px;
+    border-radius: 50%;
+  }
+  
+  .calendare .buttons button:last-of-type {
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: underline;
+    height: 35px;
+  }
+
+  .calendare img{
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+  }
+  
+  .calendare .buttons button:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .calendare .buttons button:active {
+    transform: scale(0.96);
+  }
+  
+  .calendare .buttons svg {
+    display: block;
+    height: 24px;
+    width: 24px;
+    fill: currentcolor;
+  }
+
+  main{
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  .location{
+    display: none;
+  }
+
+
+  .location-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location-mobile img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    content: url('../assets/images/location-mobile.png');
+  }
+
+  .location-mobile > div p {
+    font-size: 1rem;
+    width: 90%;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+
+  .location-mobile .content{
+    margin-top: 15px;
+  }
+
+  .location-mobile {
+    padding-block: 48px;
+    border-top: 1px solid #dddddd;
+  }
+  
+  .location-mobile h2 {
+    margin-bottom: 24px;
+  }
+  
+  .location-mobile img {
+    margin-bottom: 32px;
+  }
+  
+  .location-mobile > div h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .location-mobile > div p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  
+  .location-mobile > div a {
+    color: #222222;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .location-mobile > div span {
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .location-mobile > div a svg {
+    height: 12px;
+    width: 12px;
+    display: block;
+    fill: currentcolor;
+  }
+
+  .reviews .header .award h2 {
+    font-size: 4.5rem;
+  }
+
+  .reviews .header p {
+    font-size: 0.875rem;
+    max-width: 18rem;
+  }
+
+  
+  .reviews {
+    padding:  48px 48px 0px 48px;
+    border-top: 1px solid #dddddd;
+  }
+
+  .comments {
+    border-top: none;
+
+    padding: 40px;
+  }
+
+  .comments > div {
+    display: flex;
+    margin-block: 24px;
+    height: 220px;
+    padding: 20px;
+    width: 95%;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);;
+  }
+
+  .comments .comment{
+    display: flex;
+  }
+
+  .comments .comment .user-info{
+    order: 3;
+    margin-top: 40%;
+  }
+
+  .comments .comment .user-review {
+    order: 1;
+    flex-wrap: wrap;
+  }
+
+  .comments .comment .comment-text {
+    order: 2;
+
+  }
+  
+
+  .comments button {
+    width: 100%;
+  }
+
+  .comments .comment:nth-last-of-type(2) {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .host{
+    padding-block-start: 48px;
+    padding-block-end: 24px;
+  }
+
+  .host div{
+    display: flex;
+    flex-direction: column;
+  }
+
+.host .right .superhost-info h3,
+.host .right .response-time h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+  .host .left .about > div {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    gap: 12px;
+    font-size: 1rem;
+  }
+
+  .host .right .payment-warning {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .host .right .payment-warning svg {
+    display: block;
+    min-height: 24px;
+    min-width: 24px;
+  }
+
+  .policies{
+    padding-block: 0px;
+  }
+
+  .policies h2 {
+    display: none
+  }
+
+  .policies .policies-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .policies .policies-content .column {
+    padding-block: 35px;
+    border-bottom: 1px solid #dddddd;
+    gap: 8px;
+
+    order: 2;
+  }
+
+  .policies .policies-content .column:nth-last-of-type(2){
+    order: 1;
+  }
+
+  .policies .policies-content .column:nth-last-of-type(3){
+    order: 3;
+  }
+
+  .policies .policies-content .report{
+    order: 4;
+  }
+
+  .policies .policies-content .column h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  .policies .policies-content .column p {
+    color: #6a6a6a;
+    font-size: 0.875rem;
+  }
+
+  .policies .report{
+    display: flex;
+    padding-block: 25px;
+  }
+
+  .policies .report a{
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .policies .report a span {
+    font-weight: 600;
+    color: black;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: underline;
+  }
+
+  .policies .report a .report-icon {
+    color: black;
+    display: block;
+    
+    height: 16px;
+    width: 16px;
+    fill: currentcolor;
+  }
+
+  .reviews .items {
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+
+  footer .footer-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer-nav .column {
+    padding-block: 24px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  footer .footer-content{
+    border: none;
+    gap: 10px;
+  }
+
+  footer .footer-content .social {
+    display: none;
+  }
+
+  footer .footer-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+  }
+
+  footer .footer-content .links{
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media (max-width: 1128px) and  (min-width: 744px){
+
+  .container{
+    padding-inline: 40px;
+  }
+  .hedaer-content{
+    justify-content: space-evenly;
+  }
+  .header-content .logo svg{
+    width: 30px;
+  }
+
+  .header-content .logo {
+    flex: 1 0 5%;
+  }
+  .header-content .logo svg .icon-text {
+    display: none;
+  }
+
+  .header-content .search span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90px;
+  }
+
+  .info .left .info-content img{
+    content: url('../assets/images/calendare.png')
+  }
+
+  .reviews .items .item {
+    width: 8.6%;
+    padding: 0px 16px 2px;
+  }
+
+  .reviews {
+    padding: 0px;
+  }
+
+  .reviews .header{
+    padding-top: 48px;
+  }
+
+  .reviews .items{
+    padding-bottom: 35px;
+  }
+
+  .location img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .location .content{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:1440px) and (min-width:1128px){
+  .container{
+    padding-inline: 10%;
+  }
+
+  .location img {
+    width: 90%;
+  }
+
+  .reviews .items .item {
+    width: 8.6%;
+    padding: 0px 16px 2px;
+  }
+
+  .reviews .header{
+    padding-top: 48px;
+  }
+
+  .reviews .items{
+    padding-bottom: 35px;
+  }
+
+  .reviews {
+    padding: 0;
+  }
+
+  .info .left .info-content img{
+    min-width: 505px;
+    max-width: 60%;
+  }
+  
+}
+
+@media (max-width: 1750px) and (min-width: 1441px) {
+
+  .container{
+    padding-inline: 15%;
+  }
+  .info .left .info-content img{
+    min-width: 505px;
+    max-width: 60%;
+  }
+
 }
